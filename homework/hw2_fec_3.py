@@ -48,7 +48,8 @@ pu = 1/max_burst       # burst error distribution (uniform b/w 1 and 20)
 
 p_noerr = ((1-pe)**10)
 p_error = 1 - p_noerr
-ratios = 1 + 1*100/55 + 1*45/55
+# ratios = 1 + 1*100/55 + 1*45/55
+ratios = 55 / (55 + 100 + 45)
 
 p_sym = np.zeros(3)
 p_sym[0] = p_error / ratios
